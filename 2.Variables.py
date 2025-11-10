@@ -12,4 +12,5 @@ Things to be taken care of when you are creating variables:
 2. The rest of the variable name can contain letters, numbers (0-9), or underscores.
 3. Variable names are case-sensitive (e.g., myVar and myvar are different variables).
 4. Avoid using Python reserved keywords as variable names (e.g., if, else, while, for, etc.).
+5. Do not use @ while defining variables. It works as a decorator. 
 """
