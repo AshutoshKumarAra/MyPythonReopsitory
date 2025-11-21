@@ -1,12 +1,10 @@
 # Here we will learn how to create variables in Python. 
-<<<<<<< HEAD
+
 # A variable is a named location used to store data in the memory.
 x = 5           # An integer variable
 y = 3.14        # A floating-point variable
 name = "Alice"  # A string variable
 is_active = True # A boolean variable
-
-=======
 
 """"
 Ways in which you can name your variables:
@@ -31,7 +29,6 @@ z = 2 + 3j       # A complex variable
 name = "Alice"   # A string variable
 name2 = 'Bob'    # Another string variable
 is_active = True # A boolean variable 
->>>>>>> 49aac53 (Update README with latest changes)
 
 """
 Things to be taken care of when you are creating variables:
@@ -39,18 +36,15 @@ Things to be taken care of when you are creating variables:
 2. The rest of the variable name can contain letters, numbers (0-9), or underscores.
 3. Variable names are case-sensitive (e.g., myVar and myvar are different variables).
 4. Avoid using Python reserved keywords as variable names (e.g., if, else, while, for, etc.).
-<<<<<<< HEAD
 5. Do not use @ while defining variables. It works as a decorator. 
 6. PascalCaseFormat = AshutoshKumarAra (Yahan par humne Har word ko combine karke likha hai and har word ka first letter capital hota hai.)
 7. SnakeCaseFormat = Ashutosh_Kumar_Ara ( '_' ek snake ki tarah hota hai. Aise bhi aap variable define kar sakte hai)
 8. CamelCaseFormat = ashutoshKumarAra (Isme pehle word ka pehla letter small hota hai)
 """
-=======
-"""
+
 
 # How to print variables? 
 print(x)
 
 # Using the print() function you can also check the type of a variable using the type() function.
 print(type(name2))
->>>>>>> 49aac53 (Update README with latest changes)
