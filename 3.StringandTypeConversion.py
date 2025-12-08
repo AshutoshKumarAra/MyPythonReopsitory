@@ -13,7 +13,8 @@ String ko hum single quote(' '), double quote(" "), triple single quote(''' ''')
 """
 
 """
-String Indexing:
+STRING INDEXING:
+
 String me har ek character ka ek index hota hai jisse hum us character ko access kar sakte hai.
 String indexing 0 se start hoti hai.
 Example:- a = "Hello". So, H ka index 0, e ka index 1, l ka index 2, l ka index 3, o ka index 4 hoga.
@@ -40,12 +41,12 @@ print(a[::-1]) Output: !dlroW ,olleH (Yahan par string ko reverse kar diya gaya 
 """
 
 """
-Type Conversion:
+TYPE CONVERSION:
 
 Type conversion me hum ek data type ko dusre data type me convert kar sakte hai.
 Python me do tarah ke type conversion hote hai:
 
-1. Implicit Type Conversion: Isme Python khud hi ek data type ko dusre data type me convert kar deta hai.
+1. IMPLICIT TYPE CONVERSION: Isme Python khud hi ek data type ko dusre data type me convert kar deta hai.
 Example:- 
 x = 5       # Integer
 y = 3.14    # Float
@@ -53,7 +54,7 @@ z = x + y   # yahan par x ko float me convert kar diya jayega
 print(z)    Output: 8.14
 print(type(z)) Output: <class 'float'>
 
-2. Explicit Type Conversion: Isme hum khud hi ek data type ko dusre data type me convert karte hai using built-in functions.
+2. EXPLICIT TYPE CONVERSION: Isme hum khud hi ek data type ko dusre data type me convert karte hai using built-in functions.
 Example:-
 a = 10      # Integer
 b = float(a) # Integer to Float
@@ -64,7 +65,8 @@ d = int(c)  # Float to Integer
 print(d)    Output: 3
 print(type(d)) Output: <class 'int'>
 
-Type Casting kya hai?
+TYPE CASTING KYA HAI?
+
 Type casting ka matlab hota hai ek data type ko dusre data type me convert karna
 using built-in functions.
 Python me kuch built-in functions hote hai jo type casting ke liye use hote hai
@@ -88,7 +90,8 @@ Falsy values: 0, 0.0, "", [], {}, set(), None
 Truthy values vo hote hai jo boolean me convert karne par True return karte hai.
 Truthy values: Non-zero numbers, Non-empty strings, Non-empty lists, Non-empty dictionaries, Non-empty sets
 
-Type Casting and Type Conversion me kya difference hai?
+TYPE CASTING AND TYPE CONVERSION ME KYA DIFFERENCE HAI?
+
 Type Conversion me Python khud hi ek data type ko dusre data type me convert kar deta hai
 jabki Type Casting me hum khud hi ek data type ko dusre data type me convert karte hai
 using built-in functions.
