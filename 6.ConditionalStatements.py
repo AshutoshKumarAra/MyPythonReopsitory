@@ -36,3 +36,12 @@ if x >= 10:
     print("I will but butterscotch ice-cream.")
 else: 
     print("I will not buy ice-cream.")
+
+# Example 4: Using if-elif-else statement
+ice_cream_money = int(input("Mummy can you please give me money to buy ice-cream ?"))
+if ice_cream_money <= 10:
+    print("I cannot buy ice-cream.")
+elif ice_cream_money > 10 and ice_cream_money <= 50: # Here I have used here logical operator and elif statement. 
+    print("I will buy buttercotch ice-cream cone.")
+else:
+    print("I will buy ice-cream brick.")
