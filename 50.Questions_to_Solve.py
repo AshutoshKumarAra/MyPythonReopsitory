@@ -94,3 +94,12 @@ elif marks >= 0 and marks <=50:
     print("Your Grade is F")
 else:
     print("Invalid Marks Entered!")
+
+'''
+Questions based on Loops Statements:
+1. Accept an integer and print Hello World! n times using a for loop.
+'''
+# Solution 1:
+n = int(input("Enter a number:"))
+for i in range(1, n+1):   # because range functions works 1 less so if I have to print till n I have to take n+1. 
+    print("Hello World!")
