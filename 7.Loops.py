@@ -59,3 +59,47 @@ for i in range(len(a)):
 a = "Ashutosh"
 for char in a:      # String is a collection of characters. 
     print(char)
+
+'''
+What is break, continue and else statement in loops?
+- break: It is used to exit the loop prematurely when a certain condition is met.
+- continue: It is used to skip the current iteration and move to the next iteration of the loop.
+- else: This statement works with else loops. If break runs else will be skipped. 
+        If break doesn't run else will be executed after the loop ends.
+        else not only connects with if statements but also with loops.
+'''
+
+# Example 10: Using break in a for loop.
+for i in range(1,11):
+    if i == 7:
+        break
+    else:
+        print(i)
+
+# Example 11: Using continue in a for loop.
+for i in range(1,11):
+    if i == 7:
+        continue
+    else:
+        print(i)
+
+# Example 12: Using else with a for loop.
+for i in range(1,11):
+    if i == 7:
+        print("Break Statement Executed")  # This statement ran. 
+        break
+    else:
+        print(f"{i} Current Statement is executed.") # This statement ran.
+
+else:
+    print("Loop ended without break.") # This statement didnot ran. 
+
+# Example 13: Using else with a for loop where break doesn't run.
+for i in range(1,6):
+    if i == 90:
+        print("Break Statement Executed")
+        break
+    else:
+        print(f"{i} Current Statement is executed.")
+else:
+    print("Loop ended without break.") # This statement ran.
