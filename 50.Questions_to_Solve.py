@@ -105,12 +105,11 @@ Questions based on Loops Statements:
 6. Factorial of a number. 
 7. Print the sum of all even and odd numbers in a range separtely. 
 8. Print all the factors of a number. 
-9. Accept a number and check whether it is a perfect number or not. 
-10. A number whose sum of factors (excluding the number itself) is equal to the number is called a perfect number. 
-11. Check whether a number is prime or not.
-12. Reverse a string without using inbuilt functions.
-13. Check string is palindrome or not.
-14. Count all letters, digits and special characters in a string.
+9. Accept a number and check whether it is a perfect number or not. A number whose sum of factors (excluding the number itself) is equal to the number is called a perfect number. 
+10. Check whether a number is prime or not.
+11. Reverse a string without using inbuilt functions.
+12. Check string is palindrome or not.
+13. Count all letters, digits and special characters in a string.
 '''
 # Solution 1:
 n = int(input("Enter a number:"))
@@ -158,3 +157,73 @@ for i in range(1,n+1):
 
 print(f"Even number's sum is: {even}")
 print(f"Odd Number's sum is: {odd}")
+
+# Solution 8:
+n = int(input("Enter a number:"))
+for i in range(1,n+1):
+    if n%i == 0:
+	    print(i)
+
+# Solution 9:
+n = int(input("Enter a number:"))
+sum =0
+for i in range(1,n):
+    if n%i == 0:
+	    sum = sum + i
+
+if sum == n:
+    print(f"{n} is a perfect number")
+else:
+    print(f"{n} is not a perfect number")
+
+# Solution 10:
+n = int(input("Enter a number to check Perfect Number:"))
+
+for i in range(2,n+1):
+    if n%i == 0:
+        if i == n:
+            print(f"{n} is a perfect number")
+            break
+        else:
+            print(f"{n} is not a perfect number")
+            break
+
+# Solution 11:
+str= input("Enter a string:")
+str_length = len(str)
+reverse_str = ""
+for i in range(str_length-1,-1,-1):
+    reverse_str = reverse_str+str[i]
+
+print(reverse_str)
+
+# Solution 12:
+str = input("Enter a string to check palindrome:")
+reverse_str = ""
+str_length = len(str)
+for i in range(str_length-1,-1,-1):
+    reverse_str = reverse_str+str[i]
+
+if reverse_str == str:
+    print(f"{str} is Palindrome")
+else:
+    print(f"{str} is not Palindrome")
+
+# Solution 13:
+str = input("Enter a string: ")
+str_length = len(str)
+Chars = 0
+Digits = 0
+Symbols = 0
+for i in range(0,str_length,1):
+    if (str[i]>='A' and str[i]<='Z') or (str[i]>='a' and str[i]<='z'):  # Because it is string not single characters. It understoods the range to be A to Z and a to z.
+        print(str[i])
+        Chars = Chars + 1
+    elif str[i]>='0' and str[i]<='9':    # Because it is string not single digits. It understoods the range to be 0 till 9. 
+        Digits = Digits + 1
+    else:
+        Symbols = Symbols + 1
+
+print(f"chars:{Chars}")
+print(f"Digits:{Digits}")
+print(f"Symbols:{Symbols}")

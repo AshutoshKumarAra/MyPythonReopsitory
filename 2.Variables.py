@@ -28,6 +28,7 @@ y = 3.14         # A floating-point variable
 z = 2 + 3j       # A complex variable
 name = "Alice"   # A string variable
 name2 = 'Bob'    # Another string variable
+name3 = ""       # An empty string variable
 is_active = True # A boolean variable 
 
 """
