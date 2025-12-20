@@ -98,8 +98,63 @@ else:
 '''
 Questions based on Loops Statements:
 1. Accept an integer and print Hello World! n times using a for loop.
+2. Print Natural numbers upto n. 
+3. Reverse for loop. Print n to 1. 
+4. Take a number as input and print it's table. 
+5. Sum up to n terms. 
+6. Factorial of a number. 
+7. Print the sum of all even and odd numbers in a range separtely. 
+8. Print all the factors of a number. 
+9. Accept a number and check whether it is a perfect number or not. 
+10. A number whose sum of factors (excluding the number itself) is equal to the number is called a perfect number. 
+11. Check whether a number is prime or not.
+12. Reverse a string without using inbuilt functions.
+13. Check string is palindrome or not.
+14. Count all letters, digits and special characters in a string.
 '''
 # Solution 1:
 n = int(input("Enter a number:"))
 for i in range(1, n+1):   # because range functions works 1 less so if I have to print till n I have to take n+1. 
     print("Hello World!")
+
+# Solution 2:
+n = int(input("Enter a number:"))
+for i in range(1, n+1):
+    print(i)
+
+# Solution 3:
+n = int(input("Enter a number:"))
+for i in range(n,0,-1):
+    print(i)
+
+# Solution 4:
+n = int(input("Enter an integer:"))
+for i in range(1,11,1):
+    print(f"{n} X {i} = {n*i}")
+
+# Solution 5:
+n = int(input("Enter a number:"))
+sum = 0
+for i in range(n+1):
+    sum = sum+i
+print(sum)
+
+# Solution 6:
+n = int(input("Enter a number:"))
+fact = 1
+for i in range(n,0,-1):
+    fact = fact*i
+print(f"{n}! is {fact}")
+
+# Solution 7:
+n = int(input("Enter a number:"))
+even = 0
+odd = 0
+for i in range(1,n+1):
+    if i % 2 == 0:
+        even = even+i
+    else:
+        odd = odd+i
+
+print(f"Even number's sum is: {even}")
+print(f"Odd Number's sum is: {odd}")
