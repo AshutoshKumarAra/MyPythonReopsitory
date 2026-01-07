@@ -227,3 +227,19 @@ for i in range(0,str_length,1):
 print(f"chars:{Chars}")
 print(f"Digits:{Digits}")
 print(f"Symbols:{Symbols}")
+
+'''
+Questions based on While Loops:
+1. Take a number as input and print its digits in reverse order.
+'''
+# Solution 1:
+num = int(input("Enter a number:"))
+num2 = 0
+length = len(str(num))
+while length>0:
+    digit = num%10
+    num2 = (num2*10) + digit
+    num = num//10
+    length = length-1
+else:
+    print(f"The reverse is:{num2}")
