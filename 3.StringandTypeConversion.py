@@ -12,7 +12,7 @@ Example:- print(chr(65)) Output: A
 String ko hum single quote(' '), double quote(" "), triple single quote(''' '''), triple double quote(""" """) me define kar sakte hai.
 """
 
-"""
+
 STRING INDEXING:
 
 String me har ek character ka ek index hota hai jisse hum us character ko access kar sakte hai.
@@ -38,9 +38,9 @@ print(a[:]) Output: Hello, World! (Yahan par pura string print hoga)
 print(a[0:13:1]) Output: Hello, World! (Yahan par 0 se 13 tak ka part print hoga with step 1)
 print(a[0:13:2]) Output: Hlo ol! (Yahan par 0 se 13 tak ka part print hoga with step 2)
 print(a[::-1]) Output: !dlroW ,olleH (Yahan par string ko reverse kar diya gaya hai -1 ka matlab indexing reverse chal rahi hai)
-"""
 
-"""
+
+
 TYPE CONVERSION:
 
 Type conversion me hum ek data type ko dusre data type me convert kar sakte hai.
@@ -97,4 +97,3 @@ jabki Type Casting me hum khud hi ek data type ko dusre data type me convert kar
 using built-in functions.
 
 IMPORTANT: Explicit Type Conversion and Type Casting dono me same cheez hoti hai.
-"""
