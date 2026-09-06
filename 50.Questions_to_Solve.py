@@ -230,7 +230,10 @@ print(f"Symbols:{Symbols}")
 
 '''
 Questions based on While Loops:
+
 1. Take a number as input and print its digits in reverse order.
+2. Accept a number and print its palindromic number. (If number and its reverse are equal)
+3. Create a random number guessing game in python. 
 '''
 # Solution 1:
 num = int(input("Enter a number:"))
@@ -243,3 +246,41 @@ while length>0:
     length = length-1
 else:
     print(f"The reverse is:{num2}")
+
+#Solution 2: 
+num2 = 0
+num = int(input("Enter a number:"))
+num1 = num
+length = len(str(num))
+
+while length>0:
+    digit = num % 10
+    num2 = num2*10 + digit
+    num = num // 10
+    length -= 1
+if (num1 == num2):
+    print(f"The number is palindrome")
+else:
+    print(f"The number is not palindrome")
+
+#Solution 3: 
+import random # Random is a library by which you can create or generate a random number. 
+num = random.randint(1,56)
+tries = 0
+
+while True:   #Infinite loop.
+    guess = int(input(f"Please guess your number between 1 and 10"))
+
+    if num == guess:
+        tries += 1
+        print(f"You have guess the number correctly.")
+        break
+    elif num > guess:
+        print(f"The number you have guessed is slighlty lower.")
+        tries += 1
+    elif num < guess:
+        print(f"The number you have guessed in slighlty higher.")
+        tries += 1
+    else:
+        tries += 1
+        print(f"The number you have guessed is wrong.")

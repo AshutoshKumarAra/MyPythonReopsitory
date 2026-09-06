@@ -18,8 +18,10 @@ while count <= 5:
     print("Count is:", count)
     count += 1  # Increment the counter to avoid infinite loop
 
-# Example 2: 
+# Example 2: Reverse a number.
 a = int(input("Enter a number:"))
+rev = 0
 while a>0:
-    print(a%10)
+    rev = rev * 10 + a%10
     a = a//10
+print(rev)
